@@ -17,3 +17,17 @@
 .topContent {
        margin-top: 10em;
 }
+
+.topTitle {
+       color: #fff;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 48px;
+       font-weight: 700;
+}
+
+.topSubtitle {
+       color: #fff;
+       font-family: 'Raleway', sans-serif;
+       font-size: 22px;
+       font-weight: 600;
+}

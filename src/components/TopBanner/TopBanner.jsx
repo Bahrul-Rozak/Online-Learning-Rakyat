@@ -12,8 +12,8 @@ class TopBanner extends Component {
             <Container className="topContent">
               <Row>
                 <Col className="text-center">
-                  <h1>ONLINE LEARNING RAKYAT</h1>
-                  <h4>Learn Professionally</h4>
+                  <h1 className="topTitle">ONLINE LEARNING RAKYAT</h1>
+                  <h4 className="topSubtitle">Learn Professionally</h4>
                   <Button variant="primary">Learn More</Button>
                 </Col>
               </Row>
