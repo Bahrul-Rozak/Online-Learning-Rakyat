@@ -77,4 +77,21 @@
        font-weight: 400;
 }
 
+.serviceMainTitle {
+       color: #051b35;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 28px;
+       font-weight: 700;
+       margin-bottom: 3rem;
+       margin-top: 5rem;
+}
+
+.bottom {
+       background: #051b35 none repeat scroll 0 0;
+       height: 5px;
+       margin: -1.9rem auto 0;
+       margin-bottom: 3rem;
+       width: 100px;
+}
+
 /* End Services Components */
