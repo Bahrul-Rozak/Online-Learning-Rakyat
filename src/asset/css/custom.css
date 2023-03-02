@@ -32,6 +32,9 @@
        font-weight: 600;
 }
 
+
+/*Services Components*/
+
 .designIcon {
        height: 80px;
 }
@@ -43,3 +46,35 @@
 .webIcon {
        height: 80px;
 }
+
+.serviceCard {
+       box-shadow: 0 0 8px 0 rgba(4, 44, 105, 0.2);
+       height: 22rem;
+       margin: 5px;
+       padding: 60px 30px;
+}
+
+.serviceCard:hover {
+       box-shadow: 0 0 16px 0 rgba(5, 41, 97, 0.2);
+       height: 22rem;
+       margin: 5px;
+       padding: 60px 30px;
+}
+
+.serviceName {
+       color: #051b35;
+       margin-top: 1rem;
+       font-family: 'Raleway', sans-serif;
+       font-size: 24px;
+       font-weight: 700;
+}
+
+.serviceDescription {
+       color: #505050;
+       margin-top: 1rem;
+       font-family: 'Raleway', sans-serif;
+       font-size: 15px;
+       font-weight: 400;
+}
+
+/* End Services Components */
