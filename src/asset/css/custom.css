@@ -112,4 +112,21 @@
        font-weight: 700;
 }
 
+.navBackground {
+       background-color: rgb(0, 0, 0, 0.1) !important;
+       -moz-transition: background-color 400ms linear;
+       -o-transition: background-color 400ms linear;
+       transition: background-color 400ms linear;
+       -webkit-transition: background-color 400ms linear;
+}
+
+.navBackgroundScroll {
+       background-color: #fff;
+       -moz-transition: background-color 400ms linear;
+       -o-transition: background-color 400ms linear;
+       transition: background-color 400ms linear;
+       -webkit-transition: background-color 400ms linear;
+}
+
+
 /* End TopNavigation Components */
