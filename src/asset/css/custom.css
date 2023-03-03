@@ -95,3 +95,21 @@
 }
 
 /* End Services Components */
+
+/* TopNavigation Components */
+
+.navTitle {
+       color: #fff !important;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 30px;
+       font-weight: 700;
+}
+
+.navTitleScroll {
+       color: #0e3768 !important;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 30px;
+       font-weight: 700;
+}
+
+/* End TopNavigation Components */

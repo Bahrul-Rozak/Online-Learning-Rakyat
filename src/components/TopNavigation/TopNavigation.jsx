@@ -2,6 +2,24 @@ import React, { Component, Fragment } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 class TopNavigation extends Component {
+  constructor() {
+    super();
+    this.state = {
+      navBarTitle: "navTitle",
+    };
+  }
+
+  onScroll = () => {
+    if (window.scrollY > 100) {
+      this.setState({ navBarTitle: "navTitleScroll" });
+    } else if (window.scrollY < 100) {
+      this.setState({ navBarTitle: "navTitle" });
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.onScroll);
+  }
   render() {
     return (
       <Fragment>
@@ -13,7 +31,9 @@ class TopNavigation extends Component {
           variant="dark"
         >
           <Container>
-            <Navbar.Brand href="#home">Online Learning Rakyat</Navbar.Brand>
+            <Navbar.Brand className={this.state.navBarTitle} href="#home">
+              Online Learning Rakyat
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
