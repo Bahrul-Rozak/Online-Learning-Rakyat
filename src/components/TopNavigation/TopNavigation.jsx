@@ -1,19 +1,22 @@
 import React, { Component, Fragment } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import logoWhite from "../../asset/image/logo_white.png";
+import logoBlack from "../../asset/image/logo_black.png";
 
 class TopNavigation extends Component {
   constructor() {
     super();
     this.state = {
       navBarTitle: "navTitle",
+      navBarLogo: [logoWhite],
     };
   }
 
   onScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({ navBarTitle: "navTitleScroll" });
+      this.setState({ navBarTitle: "navTitleScroll", navBarLogo: [logoBlack] });
     } else if (window.scrollY < 100) {
-      this.setState({ navBarTitle: "navTitle" });
+      this.setState({ navBarTitle: "navTitle", navBarLogo: [logoWhite] });
     }
   };
 
@@ -32,7 +35,10 @@ class TopNavigation extends Component {
         >
           <Container>
             <Navbar.Brand className={this.state.navBarTitle} href="#home">
-              Online Learning Rakyat
+              <img
+                src={this.state.navBarLogo}
+                alt="online-learning-rakyat-logo"
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
