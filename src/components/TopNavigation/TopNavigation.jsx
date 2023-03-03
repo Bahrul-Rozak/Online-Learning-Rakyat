@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logoWhite from "../../asset/image/logo_white.png";
 import logoBlack from "../../asset/image/logo_black.png";
+import "../../asset/css/custom.css";
+import "../../asset/css/bootstrap.min.css";
 
 class TopNavigation extends Component {
   constructor() {
