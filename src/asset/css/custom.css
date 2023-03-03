@@ -146,3 +146,24 @@
 
 
 /* End TopNavigation Components */
+
+/* Analysis Components */
+
+.analysisDescription {
+       color: #505050;
+       margin-top: 1rem;
+       font-family: 'Raleway', sans-serif;
+       font-size: 15px;
+       font-weight: 400;
+}
+
+.analysisMainTitle {
+       color: #051b35;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 28px;
+       font-weight: 700;
+       margin-bottom: 3rem;
+       margin-top: 5rem;
+}
+
+/* End Analysis Componens */
