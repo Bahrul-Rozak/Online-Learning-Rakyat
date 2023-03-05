@@ -180,11 +180,30 @@
        min-height: 400px;
 }
 
-.summaryBannerOverlay {
-       background: rgba(0, 0, 0, 0.7);
+.summaryBanner .summaryBannerOverlay {
+       /* background: rgba(0, 0, 0, 0.7); */
+       background: rgba(27, 31, 92, 0.7);
        min-height: 400px;
        position: absolute;
        width: 100%;
+}
+
+.summaryBanner .summaryBannerOverlay .countSection {
+       margin-top: 20%;
+}
+
+.summaryBanner .summaryBannerOverlay .countSection .countNumber {
+       color: #fff;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 40px;
+       font-weight: 700;
+}
+
+.summaryBanner .summaryBannerOverlay .countSection .countTitle {
+       color: #ffd900;
+       font-family: 'Raleway', sans-serif;
+       font-size: 22px;
+       font-weight: 600;
 }
 
 /* End Summary Components */
