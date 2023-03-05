@@ -226,6 +226,14 @@
        text-align: justify;
 }
 
+.iconBullet {
+       color: #051b35;
+       font-size: 16px;
+}
 
+.iconProject {
+       color: #fff;
+       font-size: 40px;
+}
 
 /* End Summary Components */
