@@ -1,6 +1,6 @@
 .topFixedBanner {
        background-attachment: fixed;
-       background-image: url(../image/banner.jpg);
+       background-image: url(../image/walpapermantap.jpg);
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
@@ -168,3 +168,23 @@
 }
 
 /* End Analysis Componens */
+
+/* Summary Components */
+
+.summaryBanner {
+       background-attachment: fixed;
+       background-image: url(../image/walpapermantap.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       min-height: 400px;
+}
+
+.summaryBannerOverlay {
+       background: rgba(0, 0, 0, 0.7);
+       min-height: 400px;
+       position: absolute;
+       width: 100%;
+}
+
+/* End Summary Components */
