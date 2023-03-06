@@ -3,6 +3,8 @@ import React, { Component, Fragment } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGlobe, faLaptop, faStar } from "@fortawesome/free-solid-svg-icons";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 class Summary extends Component {
   render() {
@@ -16,7 +18,15 @@ class Summary extends Component {
                   <Row className="countSection">
                     <Col>
                       <FontAwesomeIcon icon={faGlobe} className="iconProject" />
-                      <h1 className="countNumber">3000 </h1>
+                      <h1 className="countNumber">
+                        <CountUp start={0} end={35000} delay={0}>
+                          {({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                            </VisibilitySensor>
+                          )}
+                        </CountUp>
+                      </h1>
                       <h4 className="countTitle">Student Worldwide</h4>
                       <hr className="bg-white w-30 h-15" />
                     </Col>
@@ -26,15 +36,31 @@ class Summary extends Component {
                         icon={faLaptop}
                         className="iconProject"
                       />
-                      <h1 className="countNumber">3000 </h1>
-                      <h4 className="countTitle">Student Worldwide</h4>
+                      <h1 className="countNumber">
+                        <CountUp start={0} end={22} delay={0}>
+                          {({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                            </VisibilitySensor>
+                          )}
+                        </CountUp>
+                      </h1>
+                      <h4 className="countTitle">Courses Published</h4>
                       <hr className="bg-white w-30 h-15" />
                     </Col>
 
                     <Col>
                       <FontAwesomeIcon icon={faStar} className="iconProject" />
-                      <h1 className="countNumber">3000 </h1>
-                      <h4 className="countTitle">Student Worldwide</h4>
+                      <h1 className="countNumber">
+                        <CountUp start={0} end={35000} delay={0}>
+                          {({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                            </VisibilitySensor>
+                          )}
+                        </CountUp>
+                      </h1>
+                      <h4 className="countTitle">Students Reviews</h4>
                       <hr className="bg-white w-25 h-15" />
                     </Col>
                   </Row>
